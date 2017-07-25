@@ -1,0 +1,321 @@
+@charset "UTF-8"; 
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/background.jpg) repeat;
+	font: 12px/1.5 Verdana;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: red;
+}
+ul {
+	list-style:none;
+}
+img {
+	vertical-align: top;
+	border: 0;
+}
+article.page {
+	width: 945px;
+	margin: 0 auto;
+	background: white;
+	border-width: 0 8px 0;
+	border-style: solid;
+	border-color: #893906;
+}
+article.page::after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+
+/* 标题开始 */
+
+header div.top {
+	background: url(../images/setpage.jpg) repeat;
+	padding: 5px 0;
+	height: 17px;
+	color: #666;
+	padding-left: 20px;
+}
+div.top_right {
+	float: right;
+}
+div.top_right span {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	padding-left: 18px;
+	background: url(../images/hicon.jpg) no-repeat;
+}
+
+header div.banner {
+	height: 180px;
+	width: 100%;
+	background: url(../images/banner.jpg) no-repeat;
+}
+
+nav {
+		background: url(../images/navbg.jpg) repeat;
+}
+nav ul {
+	height: 57px;
+	width: 910px;
+	margin: 0 auto;
+
+}
+nav ul::after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+nav ul li {
+	float: left;
+	line-height: 20px;
+	margin-top: 20px;
+	height: 20px;
+	border-right: 1px solid #783503;
+	text-align: center;
+	width: 100px;
+}
+nav ul li:last-child {
+	border: none;
+}
+nav ul li a{
+	color: #783503;
+	font-weight: bold;
+	width: 100%;
+}
+
+
+aside {
+	width: 268px;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: orange;
+	float: left;
+}
+aside a:hover {
+	text-decoration: underline;
+}
+aside section.type {
+	background: url(../images/sideleft.jpg) no-repeat;
+	padding-top: 30px;
+}
+aside section.use {
+	margin: 14px 0;
+	background: url(../images/yongtu.jpg) no-repeat;
+	padding-top: 30px;
+}
+aside section li.con {
+	margin: 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #666;
+}
+li.con h4 {
+	margin: 20px 0;
+	text-align:center;
+	color: #ffa200;
+}
+li.con ul {
+	overflow: hidden;
+}
+li.con ul li {
+	float: left;
+	margin-bottom: 10px;
+	width: 105px;
+	padding-left: 15px;
+	background: url(../images/si.gif) no-repeat 0 4px;
+}
+
+article.content {
+	float: right;
+	margin-left: 5px;
+	overflow: hidden;
+}
+div.xuanchuan::after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	margin-bottom: 5px;
+}
+div.xuanchuan div.xc_ban {
+	float: left;
+	width: 367px;
+	height: 201px;
+	position: relative;
+	background: blue;
+	overflow: hidden;
+}
+div.ban_con {
+	width: 2202px;
+	height: 201px;
+	position: absolute;
+}
+div.ban_con div {
+	width: 367px;
+	height: 201px;
+	float: left;
+}
+ul.ban_btn {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+ul.ban_btn li {
+	width: 20px;
+	cursor: pointer;
+	height: 15px;
+	text-align: center;
+	font: 12px/15px "微软雅黑";
+	float: left;
+	color: white;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: white;
+	background-image: linear-gradient(to bottom,rgba(102,204,255,0.5),rgba(0,255,255,0.5));
+}
+ul.ban_btn li.current {
+	background: #ededed;
+	color: rgba(102,204,255,1);
+}
+
+div.xuanchuan div.xc_jianjie {
+	float: right;
+	margin-left: 5px;
+	width: 298px;
+	height: 200px;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	border-color: orange;
+}
+div.xc_jianjie h4 {
+	text-indent: -9999px;
+	height: 30px;
+	background: url(../images/about.jpg) no-repeat;
+}
+div.xc_jianjie p {
+	text-indent: 2em;
+	color: #000;
+	font: 12px/1.5 "宋体";
+	margin: 10px 4px;
+}
+div.xc_jianjie p a {
+	color: red;
+	vertical-align: top;
+	font-family: "宋体";
+}
+div.xc_jianjie p a:hover {
+	text-decoration: underline;
+}
+
+
+div.list {
+	margin-bottom: 18px;
+}
+div.list h4 {
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 20px;
+}
+div.list_1 h4 {
+	background: #d2953d url(../images/biaotid_001.gif) no-repeat 0 5px;
+}
+div.list_2 h4 {
+	background: #d2953d url(../images/sichuantese.gif) no-repeat 0 5px;
+}
+div.list_3 h4 {
+	background: #d2953d url(../images/jingpin.gif) no-repeat 0 5px;
+}
+div.list_4 h4 {
+	background: #d2953d url(../images/shishang.gif) no-repeat 0 5px;
+}
+div.list_5 h4 {
+	background: #d2953d url(../images/jiaju.gif) no-repeat 0 5px;
+}
+div.list h4 a {
+	font-weight: normal;
+	cursor: pointer;
+}
+div.list h4 a:hover {
+	color: black;
+	text-shadow: 1px 1px 2px white;
+}
+div.list ul.list_con {
+	overflow: hidden;
+	padding: 10px 5px;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	border-color: orange;
+	background: #fef7c7;
+}
+div.list ul li {
+	float: left;
+	margin: 0 5px;
+	text-align: center;
+}
+section.new {
+	clear: both;
+}
+section.new::after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+section.new div.new_ {
+	float: left;
+	margin: 10px 6px 0;
+	width: 302px;
+}
+div.new_left h4 {
+	background: url(../images/dongtai.gif) no-repeat;
+}
+div.new_middle h4 {
+	background: url(../images/xinwen.gif) no-repeat;
+}
+div.new_right h4 {
+	background: url(../images/liping.gif) no-repeat;
+}
+div.new_ h4 {
+	height: 41px;
+	text-indent: -9999px;
+}
+div.new_ ul {
+	background: #e3d9b9;
+	padding: 15px 10px 10px;
+}
+div.new_ ul li {
+	padding-left: 20px;
+	margin-bottom: 5px;
+	background: url(../images/newi.gif) no-repeat 0 6px;
+}
+
+div.blank {
+	width: 100%;
+	height: 7px;
+	background: url(../images/fline.gif) repeat-x;
+}
+
+footer {
+	height: 84px;
+	padding-top: 30px;
+	background: url(../images/tlogo.gif) repeat-x;
+	text-align: center;
+}
+footer p {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
