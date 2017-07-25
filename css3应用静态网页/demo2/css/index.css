@@ -1,0 +1,343 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+}
+body{
+	background: #226039 url(../images/bg-girl.jpg) no-repeat center top;
+}
+ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+}
+.dhead {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+	/* border: 1px solid black; */
+	/* background: blue; */
+}
+.zhusi {
+	font-size: 12px;
+	width: 300px;
+	color: white;
+	text-shadow: 1px 1px 1px gray;
+	letter-spacing: 0.5px;
+}
+.text5 {
+	font-size: 30px;
+	font-weight: 500;
+	color: white;
+	margin-top: 90px;
+	/* width: 140px; */
+	/* background: blue; */
+}
+.flower{
+	height: 155px;
+	width: 160px;
+	background: url(../images/flower.png) no-repeat center;
+	position: absolute;
+	right: 0;
+	top: 90px;
+	z-index: 2;
+	padding: 25px 0 0 20px;
+}
+nav{
+	width: 100%;
+	background: rgba(51,127,69,0.8);
+}
+nav ul {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 30px;
+	padding: 16px 0;
+}
+nav ul li a{
+	color: white;
+	font-size: 16px;
+}
+
+			/* 头部结束 */
+			
+section.photowall {
+	width: 100%;
+	padding: 20px 0;
+	background: #559664;
+}
+ul.pWall {
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	overflow: hidden;
+}
+ul.pWall li {
+	position: relative;
+	float: left;
+}
+ul.pWall img{
+	vertical-align: top;
+	opacity: 0.8;
+}
+ul.pWall li:hover img{
+	opacity: 0.4;
+}
+ul.pWall figcaption{
+	position: absolute;
+	left: 0;
+	top: 10px;
+	padding: 40px;
+	font-size: 12px;
+	opacity: 0;
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+ul.pWall li:hover figcaption{
+	opacity: 0.8;
+	transform: scale(1);
+}
+ul.pWall li p.text_a {
+	font-size: 12px;
+	width: 215px;
+	color: gray;
+	padding: 35px 25px 30px 20px;
+	text-indent: 2em;
+}
+ul.pWall li p.text_b{
+	font-size: 12px;
+	color: gray;
+	text-indent: 2em;
+	width: 169px;
+	padding: 65px 15px 60px 20px;
+}
+ul.pWall li a{
+	color: gray;
+}
+
+/* 照片墙结束 */
+
+section.b_g{
+	background: white;
+	width: 100%;
+	padding:20px 0;
+	/* height: 350px; */
+}
+section.b_g ul{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+section.b_g .b_gtop li{
+	width: 28px;
+	height: 28px;
+	float: left;
+	border-radius: 50%;
+	margin-right: 2px;
+	transform: scale(0.3);
+	animation: ac 1.5s linear infinite;
+	margin-bottom: 15px;
+}
+
+section.b_g .b_gtop li:nth-child(2){
+	animation-delay: 0.15s;
+}
+section.b_g .b_gtop li:nth-child(3){
+	animation-delay: 0.3s;
+}
+section.b_g .b_gtop li:nth-child(4){
+	animation-delay: 0.45s;
+}
+section.b_g .b_gtop li:nth-child(5){
+	animation-delay: 0.6s;
+}
+section.b_g .b_gtop li:nth-child(6){
+	animation-delay: 0.75s;
+}
+section.b_g .b_gtop li:nth-child(7){
+	animation-delay: 0.9s;
+}
+@keyframes ac{
+	0%		{transform: scale(1);background:#238d7b}
+	100%	{transform: scale(0.3);background: #fff}
+}
+
+.girl{
+	clear: both;
+	overflow: hidden;
+}
+.girl img {
+	float: left;
+	border-radius: 50%;
+	margin-right: 60px;
+	margin-left: 20px;
+}
+.girl p{
+	/* margin-left	: 20px; */
+	float: left;
+	background: #559664;
+	/* width: 600px; */
+	margin-top: 20px;
+	padding: 20px;
+	width: 460px;
+	line-height: 22px;
+	font-size: 12px;
+	border: 1px solid #559664;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: inset -1px -1px 1px #226039;
+	/* height: 44px; */
+}
+.girl p::before{
+	content:"";
+	width: 0;
+	height: 0;
+	border-width: 15px 25px 15px 0;
+	border-color: transparent #559664 transparent;
+	border-style: solid;
+	position: absolute;
+	left: -25px;
+	top: 20px;
+	/* left: -10px; */
+}
+.boy{
+	overflow: hidden;
+}
+.boy img{
+	float: right;
+	margin-right: 20px;
+	border-radius: 50%;
+	margin-left: 60px;
+}
+.boy p{
+	float: right;
+	width: 460px;
+	line-height: 22px;
+	padding: 20px;
+	background: #ececec;
+	margin-top: 25px;
+	font-size: 12px;
+	border-radius: 5px;
+	color: #505050;
+	text-shadow: 0 0 0;
+	position: relative;
+	box-shadow: inset 1px -1px 1px #999; 
+}
+.boy p::after{
+	content:"";
+	height: 0;
+	width: 0;
+	border-width: 15px 0 15px 25px;
+	border-color: transparent #ececec transparent;
+	border-style: solid;
+	position: absolute;
+	right: -25px;
+	top: 20px;
+}
+
+/* 狗粮结束 */
+
+.pw2{
+	width: 1000px;
+	overflow: hidden;
+	margin: 30px auto 60px;
+}
+.pw2 figure{
+	width: 300px;
+	float: left;
+	margin: 0 6px;
+	background: #ececec;
+	height: 430px;
+	border: 10px solid white;
+}
+
+.pw2 figure h4{
+	font-size: 14px;
+	color: #226039;
+	text-align: center;
+	margin: 20px auto 15px;
+}
+.pw2 figcaption {
+	font-size: 12px;
+	color: #666;
+	line-height: 22px;
+	padding: 0 6px 30px;
+}
+.text6{
+	width: 1000px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500px;
+}
+
+/* 又一照片墙结束 */
+
+.zhufu {
+	border-top: 55px solid #559664;
+}
+.zhufu ul {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../images/love.png) no-repeat center left;
+	/* padding-left: 10px; */
+}
+.visitor {
+	float: right;
+	width: 500px;
+}
+.visitor dl {
+	clear: both;
+}
+.visitor dt {
+	float: left;
+	margin: 10px 25px;
+}
+.visitor dt img{
+	border-radius: 50%;
+}
+.visitor dt+dd{
+	font-size: 14px;
+	color: #d2ec40;
+	padding-top: 20px;
+}
+.visitor dd:last-child{
+	color: #ececec;
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 22px;
+	letter-spacing: 0.1px;
+	font-family: "宋体";
+}
+
+/* 游客结束 */
+
+footer{
+	padding: 22px 0;
+	background: #032e13;
+	font-size: 12px;
+	color: #559664;
+}
+footer span{
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: right;
+	letter-spacing: 2px;
+}
+footer a {
+	color: #559664
+}
