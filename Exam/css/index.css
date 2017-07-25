@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/*
+	advert 宣传横幅栏
+*/
+#advert {
+	margin: 10px 0;
+	overflow: hidden;
+}
+#advert > .banner {
+	width: 624px;
+	height: 400px;
+	background: blue;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+#advert > .seconAd {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+.banner > .slider > ul {
+	width: 400%;
+// 	transition: all 2s;
+}
+/*.slider > ul:hover {
+	transform: translateX(-25%);
+}*/
+
+.slider > ul > li {
+	float: left;
+	padding: 0;
+}
+.slider > ul > li > img {
+	width: 624px;
+	height: 400px;
+}
+
+.banner > .sliCtrl {
+	position: absolute;
+	bottom: 20px;
+	right: 80px;
+}
+.sliCtrl > ul > li {
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	background: #6c6c6c;
+	margin: 0 2px;
+	border-radius: 5px;
+}
+.sliCtrl > ul > li.current {
+	background: #333;
+}
+
+.banner > .dirBtn > span {
+	width: 30px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	background: #6c6c6c;
+	transform: translateY(-50%);
+}
+.dirBtn > .previous {
+	left: 0;
+	top: 50%;
+}
+.dirBtn > .next {
+	right: 0;
+	top: 50%;
+}
+
+
+.seconAd > ul {overflow: hidden;}
+.seconAd > ul > li {
+	float: left;
+	border: 1px solid #f0f0f0;
+}
+.seconAd > ul > li:nth-of-type(1) {
+	border-left: 0;
+	border-top: 0;
+}
+.seconAd > ul > li:nth-of-type(2) {
+	border-right: 0;
+	border-top: 0;
+}
+.seconAd > ul > li:nth-of-type(3) {
+	border-left: 0;
+	border-bottom: 0;
+}
+.seconAd > ul > li:nth-of-type(4) {
+	border-right: 0;
+	border-bottom: 0;
+}
+
+.seconAd > ul > li > a {
+	display: inline-block;
+	float: left;
+	width: 199px;
+	height: 199px;
+	text-align: center;
+	line-height: 199px;
+}
+
+/*
+	article 正文
+
+		kind 商品种类
+*/
+
+
+.kindTab > ul { 
+	padding: 20px 0 10px;
+	position: relative;
+}
+.kindTab > ul:after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	border-radius: 2px;
+	background: rgba(37,77,140,1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(-10px);
+}
+.kindTab > ul > li {
+	display: inline-block;
+	margin: 0 15px;
+	/*cursor: pointer;*/
+	padding: 10px;
+}
+.kindTab > ul > li > a {
+	color: rgba(37,77,140,0.6);
+}
+.kindTab > ul > li.now {
+	border-width: 3px 3px 0 3px;
+	border-radius: 10px 10px 0 0;
+	border-style: solid;
+	border-color: rgba(37,77,140,0.5);
+	position: relative;
+}
+.kindTab > ul > li.now::after {
+	content: "";
+	height: 3px;
+	width: 100%;
+	background: white;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	z-index: 11;
+}
+
+.kindCon {
+//	background-image: linear-gradient(to bottom, rgba(102,204,255,0.5), rgba(0,255,255,0.5));
+	border:1px solid rgba(37,77,140,0.5);
+	position: relative;
+}
+.kindCon > ul > li {
+	height: 200px;
+	overflow: hidden;
+	display: none;
+}
+.kindCon > ul > li.now {
+	display: block;
+}
+.kindCon > ul > li > ul {
+	width: 300%;
+	transition: all 1s;
+}
+.kindCon > ul > li li {
+	float: left;
+	width: 120px;
+	height: 200px;
+	padding: 0 15px;
+	font-size: 12px;
+}
+.kindCon > ul > li li img {
+	width: 100%;
+	height: 150px;
+} 
+.kindCon > ul > li li span {
+	color: #a39480;
+	display: inline-block;
+	margin: 2px 0 4px 0;
+}
+.kindCon > ul > li li p {
+	padding-left: 10px;
+	color: #808a87;
+}
+
+.kindCon > .kindCtrl {
+	width: 30px;
+	height: 40px;
+	background: rgba(37,77,140,0.5);
+	position: absolute;
+	display: block;
+	transition: all 1s;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.kindCon:hover > .kindCtrl {
+	opacity: 1;
+	background: rgba(37,77,140,1);
+}
+.kindCon
+.kindCon > .cHidden { 
+
+ }
+.kindCon > .cLeft {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.kindCon > .cRight {
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*
+	品牌推广栏
+*/
+
+article > .brand {
+	margin: 20px 0;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+.brand > .brandHead {
+	height: 300px;
+	width: 700px;
+	background-size: 700px 300px;
+	background-repeat: no-repeat;
+}
+.brLm > .brandHead {
+	background-image: url(../img/tqt1v8EjawuS.jpg);
+	float: right;
+	
+}
+.brRmw > .brandHead {
+	background-image: url(../img/20023_cathouselife-child-960x750.jpg);
+	float: left;
+}
+.brandHead > h5 ,.brandHead > p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+.brandHead > h5 {
+	margin: 150px 0 10px 0;
+	text-shadow: 0 0 2px black;
+}
+
+.brandCon-sm {
+	float: left;
+	width: 320px;
+	height: 300px;
+	background: red;
+}
+.brandCon-sm > ul > li {
+	border-bottom: 2px solid #f0f0f0;
+	height: 149px;
+}
+.brandCon-sm > ul > li:last-child {
+	border: 0;
+}
+
+.brandCon-xs {
+	clear: both;
+	padding-top: 20px;
+}
+.brandCon-xs > ul > li {
+	display: inline-block;
+	width: 160px;
+	font-size: 13px;
+	margin-left: 6px;
+	text-align: center;
+}
+.brandCon-xs > ul > li img {
+	width: 100%;
+	height: 180px;
+}
+.brandCon-xs > ul > li span {
+	font-size: 12px;
+	color: #666;
+	margin: 4px 0;
+	display: block;
+	text-align: left;
+}
+
+/*article > .Affordable {
+	height: 300px;
+}*/
+.Affordable {
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 10px;
+}
+.Affordable > h5 {
+	font-size: 20px;
+	color: #aaa;
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+}
+.Affordable > h5::after {
+	content: "";
+	width: 60px;
+	height: 2px;
+	background: #bbb;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);	
+}
+.Affordable > ul > li.group {
+	float: left;
+	margin-left: 1px;
+}
+.group > .item {
+	float: left;
+//	position: relative;
+	padding: 10px 5px;
+	border: 1px solid #e8e8e8;
+//	margin: -1px 0 0 0;
+	overflow: hidden;
+}
+.group > .item:hover {
+	border: 1px solid #f40;
+}
+.group > .item > .item-content {
+//	position: relative;
+	overflow: hidden;
+}
+.group .line-1 {
+	height: 18px;
+	line-height: 18px;
+	color: #f40;
+}
+.group .sub-title {
+	overflow: hidden;
+	margin-top: 20px;
+	line-height: 22px;
+}
+.group .sub-title a {
+	color: #6c6c6c;
+}
+.big .item-content {
+	width: 203px;
+	height: 340px;
+}
+.big .image {
+	width: 203px;
+	height: 214px;
+	display: block;
+}
+.big .line-1 {
+	margin: 14px 0 3px 0;
+	font-size: 14px;
+}
+.small {
+	width: 122px;
+}
+.small .item-content {
+	width: 110px;
+	height: 160px;
+}
+
+.Affordable > .slogan {clear: both;}
+.Affordable > .slogan > li {
+	width: 327px;
+	height: 140px;
+	padding: 5px;
+	border: 1px solid #ececec;
+	float: left;
+}
+.slogan > li:hover {
+	border: 1px solid #f40;
+}

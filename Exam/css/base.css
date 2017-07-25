@@ -1,0 +1,160 @@
+@charset "utf-8";
+.wrap {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/*
+	字体声明
+*/
+@font-face {
+  font-family: 'copyType cj';
+  src: url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+       url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+}
+.kindCtrl, .dirBtn > span, .top > span {
+	font-family: 'copyType cj';
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+.cLeft::before {
+	content: '\e079';
+}
+.cRight::before {
+	content: "\e080";
+}
+.dirBtn > .previous::before {
+	content: "\e257";
+}
+.dirBtn > .next::before {
+	content: "\e258";
+}
+.top > span::before {
+	content: "\e260";
+}
+/*
+	header
+*/
+header {
+	overflow: hidden;
+	padding-top: 10px;
+	border-bottom: 1px solid #f0f0f0;
+}
+header > .head {
+	float: left;
+}
+.head > h1 {
+	height: 70px;
+	background: url(../img/logo.png) no-repeat center left;
+	padding: 0 100px;
+	text-indent: -9999px;
+	float: left;
+}
+.head > nav {
+	float: left
+}
+.head > nav > ul {
+	margin-top: 40px;
+}
+.head > nav > ul > li {
+	display: inline-block;
+	margin-left: 30px;
+}
+.head > nav > ul > li::after {
+	content: "";
+	height: 0;
+	background:  rgba(183,183,166,1);
+	display: inline-block;
+	width: 100%;
+	transition: all 1s;
+}
+.head nav > ul > li.current::after, .head > nav > ul > li:hover::after {
+	height: 4px;
+}
+.head > nav > ul > li > a {
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 16px;
+	color: #808080;
+	text-shadow: 0 0 1px rgba(102,102,102,0.9);
+}
+
+header > .headUser {
+	float: right;
+}
+.headUser > span {
+	border: 1px solid;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-image: linear-gradient(to top, rgba(,204,255,0.5), rgba(0,255,255,0.5));
+}
+
+/*
+	footer
+*/
+
+footer {
+	padding: 40px 30px;
+	overflow: hidden;
+	background: #ebecee;
+	border-radius: 0 0 10px 10px;
+	clear: both;
+}
+footer .footCon {
+	float: left;
+}
+footer .footShare {
+	float: right;
+}
+.footCon, .footShare {
+	width: 300px;
+}
+footer > div > h4 {
+	font-weight: 500;
+	font-size: 20px;
+	font-family: '方体';
+	margin-bottom: 20px;
+}
+footer > div > p {
+	font-size: 13px;
+	line-height: 20px;
+	color: #a1a0a4;
+}
+.footShare > ul {
+	margin-bottom: 15px;
+}
+.footShare > ul > li {
+	display: inline-block;
+	margin: 0 7px;
+}
+.footShare > ul > li img {
+	opacity: 0.5;
+	vertical-align: middle;
+}
+.footShare > ul > li img:hover {
+	opacity: 1;
+}
+
+
+/*
+	返回顶层
+*/
+
+div.top > span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	border: 1px solid;
+	right: 5%;
+	bottom: 50px;
+	text-align: center;
+	background: #6c6c6c;	
+}
