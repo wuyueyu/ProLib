@@ -1,0 +1,90 @@
+@charset "utf-8";
+article.pro {
+	width: 100%;
+	background: #fafafa;
+}
+.pro .mainNav {
+	height: 400px;
+	padding: 0 300px;
+	background: url(../img/home_adagency_slider2.jpg) no-repeat;
+	background-size: 100% 100%;
+	border-top: 1px solid transparent;
+}
+.mainNav ul {
+	margin-top: 300px;
+	text-align: center;
+}
+.mainNav li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #949494;
+	background-image: linear-gradient(to right, rgba(102,204,255,0.5), rgba(0,255,255,0.5));
+	color: white;
+	line-height: 50px;
+	cursor: pointer;
+}
+.mainNav li.current {
+	border: 1px solid;
+}
+
+.proCent {
+	width: 1024px;
+	margin: 0 auto;
+}
+.proCent ul.CentNav { 
+	padding: 50px 0;
+	position: relative;
+}
+.proCent ul.CentNav:after {
+	content: "";
+	height: 3px;
+	width: 100%;
+	background: black;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(-50px);
+}
+.proCent ul.CentNav h5 {
+	display: inline-block;
+	font-size: 30px;
+	margin-right: 10px;
+	color: rgba(0,0,0,0.6);
+}
+.CentNav li {
+	display: inline-block;
+	margin: 0 15px;
+	cursor: pointer;
+	padding: 10px;
+}
+.CentNav li.now {
+	border-width: 3px 3px 0 3px;
+	border-style: solid;
+	position: relative;
+}
+.CentNav li.now::after {
+	content: "";
+	height: 3px;
+	width: 100%;
+	background: #fafafa;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	z-index: 11;
+}
+
+
+.proCent .content ul {
+}
+.content li {
+	display: inline-block;
+	width: 220px;
+	vertical-align: middle;
+	margin: 10px 15px;
+	border: 1px solid;
+	height: 300px;
+}

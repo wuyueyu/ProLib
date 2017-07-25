@@ -1,0 +1,196 @@
+@charset "utf-8";
+body {
+	background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(221,221,221,0.1), rgba(255,255,255,1));
+}
+header {
+	widows: 100%;
+	height: 100px;
+	position: relative;
+	padding: 0 10px;
+	padding-top: 20px;
+	margin-bottom: 5px;
+}
+
+header .headWrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 20px;
+}
+header .headMove {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-left: 20px;
+	background: rgba(0,0,0,0.7);
+	overflow: hidden;
+	z-index: 101;
+	width: 100%;
+}
+.headMove nav li a {
+	color: white;
+}
+.headMove span.reTop {display: block;}
+.head h1 {float: left;}
+.head h1 a {	
+	text-indent: -9999px;
+	display: block;
+	width: 200px;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat left center;
+}
+.head nav {
+	margin-left: 20px;
+	float: left;
+//	width: 940px;
+}
+.head nav li {
+	display: inline-block;
+	padding: 0 20px;
+	padding-top: 20px;
+	position: relative;
+	margin: 0 15px;
+}
+.head nav li::after {
+	content: "";
+	height: 2px;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	width: 80%;
+	display: none;
+	opacity: 0.1;
+	transition: all 5s;
+}
+.head nav li.home::after {
+	display: block;
+	opacity: 0.5;
+}
+.head nav li:hover::after {
+	display: block;
+	opacity: 0.5;
+}
+.head li a {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 3px #ccc;
+	letter-spacing: 0.1em;
+}
+.head .reTop {
+	display: none;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	background: rgba(247,247,247,0.8);
+	border-radius: 5px;
+}
+
+
+header .headCtr {
+	float: right;
+	height: 100%;
+	position: relative;
+}
+
+.user span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.user span a {
+	font-size: 14px;
+	color: rgba(51,51,51,0.5);
+	text-shadow: 0px 0px 1px;
+}
+.headCtr .search {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+}
+.search span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/search.png) no-repeat center;
+}
+
+
+footer {
+	background: #ebecee;
+	overflow: hidden;
+	padding: 30px 20px 50px 30px;
+}
+footer .fLeft, .fCent {
+	float: left;
+}
+footer .fRight {
+	float: right;
+}
+.fLeft {
+	width: 300px;
+}
+.fLeft ul li {
+	margin-bottom: 7px;
+}
+.fLeft li a {
+	color: #a1a0a4;
+	font-size: 13px;
+}
+.fLeft li a:hover {
+	text-decoration: underline;
+	color: #757577;
+}
+
+.fCent, .fRight {
+	width: 300px;
+	letter-spacing: 1px;
+}
+.fCent h4, .fRight h4 {
+	font-weight: 500;
+	font-size: 20px;
+	font-family: '方体';
+	margin-bottom: 20px;
+}
+.fCent p {
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	color: #a1a0a4;
+}
+
+.fRight .share {
+	margin-bottom: 20px;
+}
+.fRight .share li {
+	display: inline-block;
+	margin: 0 7px;
+}
+.share li a img {
+	vertical-align: middle;
+	opacity: 0.5;
+}
+.share li a img:hover {
+	opacity: 1;
+}
+
+.fRight p {
+	color: #a1a0a4;
+	font-size: 12px;
+	letter-spacing: 0px;
+	line-height: 20px;
+}
+.fRight p a {
+	color: #757577;
+	letter-spacing: 0px;
+}
+
