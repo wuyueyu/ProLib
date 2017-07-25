@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*滑块*/
+
+#main-ad {
+
+}
+#main-ad > .carousel-inner > .item {
+	height: 500px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media (max-width: 767px) {
+	#main-ad > .carousel-inner > .item {
+		height: 200px;
+	}	
+}
+/*正文公告*/
+
+article .pub {
+	padding: 50px 0;
+	background: white;
+}
+article ._head {
+	margin-bottom: 50px;
+}
+article ._head h5 {
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #939393;
+}
+.pub ._head p {
+	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+	font-family: '宋体';   //带改正
+}
+article ._head::after {
+	content: "";
+	height: 2px;
+	width: 100px;
+	background: black;
+	display: block;
+	opacity: 0.5;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.pubCon ul {
+	text-align: center;
+}
+.pubCon li {
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.pubCon li figcaption {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #616064;
+}
+.pub .pubCon li span {
+	display: none;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 50%;
+	background: #666;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.pub .pubCon li:hover figure img {
+	opacity: 0.7;
+}
+.pub .pubCon li:hover a {
+	color: white;
+}
+.pub .pubCon li:hover span {
+	display: block;
+}
+
+/*正文推荐*/
+@media (min-width: 768px) {
+	.recomCon {
+		width: 750px;
+		margin: auto;
+	}
+	.recomCon .recomHead {
+		padding: 0;
+		height: 250px;	
+	}
+}
+.recomCon .recomHead {
+	background-image: url(../img/tqt1v8EjawuS.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	position: relative;
+	padding: 80px 0;
+}
+.recomHead h6 {
+	position: absolute;
+	left: 50%; 
+	bottom: 10%; 
+	transform: translateX(-50%); 
+	font-size: 16px; 
+	text-shadow: 0 0 2px;
+}
+.lmCon figure img {
+	width: 100%;
+}
+.lmCon figure p {
+	margin: 5px 0;
+}
+
+
+
+/*脚注*/
+footer {
+	background: #ebecee;
+	overflow: hidden;
+	padding: 30px 20px 50px 30px;
+}
+
+.fLeft ul li {
+	margin-bottom: 7px;
+}
+.fLeft li a {
+	color: #a1a0a4;
+	font-size: 13px;
+}
+.fLeft li a:hover {
+	text-decoration: underline;
+	color: #757577;
+}
+
+.fCent, .fRight {
+	letter-spacing: 1px;
+}
+.fCent h4, .fRight h4 {
+	font-weight: 500;
+	font-size: 20px;
+	font-family: '方体';
+	margin-bottom: 20px;
+}
+.fCent p {
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	color: #a1a0a4;
+}
+
+.fRight .share {
+	margin-bottom: 20px;
+}
+.fRight .share li {
+	display: inline-block;
+	margin: 0 7px;
+}
+.share li a img {
+	vertical-align: middle;
+	opacity: 0.5;
+}
+.share li a img:hover {
+	opacity: 1;
+}
+
+.fRight p {
+	color: #a1a0a4;
+	font-size: 12px;
+	letter-spacing: 0px;
+	line-height: 20px;
+}
+.fRight p a {
+	color: #757577;
+	letter-spacing: 0px;
+}

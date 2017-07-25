@@ -1,0 +1,24 @@
+@charset "utf-8";
+.banner {
+	width: 100%;
+	overflow: hidden;
+}
+.banner .proType {
+	width: 40%;
+	float: left;
+}
+.proType li {
+	width: 50%;
+	height: 200px;
+	display: inline-block;
+	vertical-align: middle;
+	background: blue;
+	border: 1px solid white;
+	margin-left: -4px;
+}
+.slider {
+	width: 60%;
+	float: left;
+	height: 400px;
+	background: red;
+}
