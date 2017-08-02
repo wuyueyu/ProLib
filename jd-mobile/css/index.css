@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+body {
+	background: #f5f5f5;
+}
+#container {
+	min-width: 300px;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.jd_header {
+	width: 100%;
+	height: 40px;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+.jd_header > .jd_header_box {
+	min-width: 300px;
+	max-width: 640px;
+	margin: 0 auto;
+	background: transparent;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+}
+.jd_header > .jd_head_move {
+	background: rgba(201,21,35,0.85);
+}
+.jd_header > .jd_header_box > .icon-logo {
+	background-position: 0 -103px;
+	height: 36px;
+	width: 60px;
+	display: block;
+
+	position: absolute;
+	left: 10px;
+	top: 4px;
+	// float: left;
+}
+.jd_header > .jd_header_box > form {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 75px;
+	padding-right: 50px;
+
+	position: relative;
+}
+.jd_header_box > form > .icon-search {
+	position: absolute;
+	left: 80px;
+	top: 10px;
+
+	background-position: -60px -109px;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+.jd_header_box > form > input {
+	width: 100%;
+	padding-left: 30px;
+	
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 5px;
+}
+.jd_header_box > .login {
+	width: 50px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+	line-height: 40px;color: #fff;
+	text-align: center;
+}
+
+/* banner */
+
+.jd_banner {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.jd_banner > .slider > ul {
+	width: 800%;
+}
+.jd_banner > .slider > ul > li {
+	float: left;
+	width: 12.5%;
+}
+.jd_banner > .slider > ul > li > img {
+	width: 100%;
+	display: block;
+} 
+
+/* banner 点控件 */
+
+.jd_banner > .sliCtrl {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sliCtrl > li {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: white;
+	margin-right: 2px;
+}
+.sliCtrl > li.active {
+	background: gray;
+}
+
+/* nav 导航 */
+
+.jd_nav {
+	background: white;
+	padding: 10px 3.125% 0;
+	height: 150px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_nav > ul {
+	width: 100%;
+}
+.jd_nav > ul > li {
+	float: left;
+	width: 25%;
+}
+.jd_nav > ul > li > a {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+.jd_nav > ul > li > a > img {
+	 width: 40px;
+	 height: 40px;
+}
+.jd_nav > ul > li > a > p {
+	font-size: 12px;
+	margin: 6px 0 7px;
+	color: #666;
+}
+
+/* 商品区块 */
+
+.jd_product {
+	margin: 0 5px;
+}
+.jd_product > .jd_product_box {
+	background: white;
+	margin-top: 5px;
+	width: 100%;
+}
+.jd_product_box > .product_top {
+	height: 32px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_product_box > .product_top.no-bor {
+	border-bottom: none;
+}
+.jd_product_box > .product_top > h3 {
+	position: relative;
+	padding-left: 20px;
+	line-height: 32px;
+	font-weight: normal;
+	color: #666;
+	font-size: 14px;
+}
+.jd_product_box > .product_top > h3::after {
+	content: "";
+	width: 3px;
+	height: 14px;
+	position: absolute;
+	left: 10px;
+	top: 9px;
+	display: block;
+	background: #d8505c;
+}
+/* 秒杀 */
+
+.jd_secondkill {}
+.jd_secondkill_left {
+	float: left;
+}
+.jd_secondkill_left > .sk_icon {
+	display: block;
+	background: url(../img/seckill-icon.png) no-repeat;
+	background-size: 16px 20px;
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin: 6px 0 0 8px;
+}
+.jd_secondkill_left > .sk_name {
+	font-size: 15px;
+	color: #d8505c;
+	float: left;
+	font-weight: inherit;
+	margin: 6px 0 0 8px;
+}
+.jd_secondkill_left > .sk_time {
+	float: left;
+	margin: 6px 0 0 8px;
+}
+.jd_secondkill_left > .sk_time > span {
+	float: left;
+	margin-top: 2px;
+	line-height: 16px;
+	text-align: center;
+}
+.jd_secondkill_left > .sk_time > .num {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	color: #fff;
+	background: #333;
+}
+.jd_secondkill_left > .sk_time > .str {
+	width: 4px;
+}
+.jd_secondkill_right {
+	float: right;
+	margin: 6px 8px 0 0;
+}
+.jd_secondkill_right > a {
+	font-size: 14px;
+}
+
+/* 三个产品 */
+
+.jd_secondkill > .product_bot {
+	width: 100%;
+}
+.jd_secondkill > .product_bot > ul {
+	width: 100%;
+	padding: 10px 0;
+}
+.jd_secondkill > .product_bot > ul > li {
+	width: 33.33%;
+	float: left;
+	overflow: hidden;
+}
+.jd_secondkill > .product_bot > ul > li > a {
+	width: 100%;
+	text-align: center;
+}
+.jd_secondkill > .product_bot > ul > li > a > .img_box {
+	border-right: 1px solid #e0e0e0;
+}
+.jd_secondkill > .product_bot > ul > li:last-child > a > .img_box {
+	border-right: none;
+}
+.jd_secondkill > .product_bot > ul > li > a > .img_box > img {
+	width: 64%;
+}
+.jd_secondkill > .product_bot > ul > li > a > p {
+	font-size: 12px;
+	line-height: 20px;	
+}
+.jd_secondkill > .product_bot > ul > li > a > .now_price {
+	color: #d8505c;
+}
+.jd_secondkill > .product_bot > ul > li > a > .old_price {
+	color: #888;
+	text-decoration: line-through;
+}
+
+/* 京东产品 */
+
+.jd_product > .jd_pd {
+}
+.jd_pd > .product_bot > ul {
+	width: 100%;
+}
+.jd_pd > .product_bot > ul > .p_left {
+	float: left;
+}
+.jd_pd > .product_bot > ul > .p_right {
+	float: right;
+}
+.jd_pd > .product_bot > ul > .b_left {
+	border-left: 1px solid #e0e0e0;
+}
+.jd_pd > .product_bot > ul > .b_right {
+	border-right: 1px solid #e0e0e0;
+}
+.jd_pd > .product_bot > ul > .b_bottom {
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_pd > .product_bot > ul > li {
+	width: 50%;
+}
+.jd_pd > .product_bot > ul > li img {
+	width: 100%;
+}

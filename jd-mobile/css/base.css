@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+
+	-webkit-top-highlight-color: transparent;
+	
+	box-sizing: border-box;
+
+	// 清除默认的高亮效果
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	font-family: "Microsoft YaHei",sans-serif;
+	font-size: 1.4rem;
+	color: #000;
+	background: #e0e0e0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+
+input, textarea {
+	border: none;
+	resize: none;
+	outline: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: ".";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+[class^="icon-"] {
+	background-image: url("../img/sprites.png");
+	background-size: 200px 200px;
+}
